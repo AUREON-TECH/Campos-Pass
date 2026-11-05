@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Campos Pass - Explore, Ganhe, Aproveite</title>
 
     <!-- Font Awesome Icons -->
@@ -68,7 +68,8 @@
         #app {
             width: 100%;
             max-width: 420px;
-            height: 820px;
+            height: min(820px, calc(100dvh - 40px));
+            min-height: 0;
             background: var(--white);
             border-radius: 40px;
             box-shadow: var(--shadow-xl), 0 0 0 1px rgba(255, 255, 255, 0.4);
